@@ -16,7 +16,7 @@ public class Principal {
 
     private Scanner leitura = new Scanner(System.in);
     private final String ENDERECO = "https://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=7bffc0";
+    private final String API_KEY = "&apikey=" + System.getenv("OMDB_API_KEY");
     private ConsumoApi consumo = new ConsumoApi();
     private ConverterDados converterDados = new ConverterDados();
 
